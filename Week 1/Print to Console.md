@@ -1,0 +1,27 @@
+When you run a program a terminal will appear in the bottom. You can use the terminal to display information about the program. The simplest way of doing so is called printing (this does not use an actual printer). We use `System.out.println();`. Anything you put inside will be written in the console
+
+```java
+System.out.println("This will show in the console!")
+System.out.println("Hello World!");
+System.out.println("Use \n
+                    for multiple lines");
+```
+
+As you can see, every message is surrounded by quotation marks `""`. This basically tells the computer that it is a message.\
+You can combine messages using `+`.
+
+```java
+System.out.println("You can " + "combine messages!");
+//You can combine messages!
+```
+
+Or you can print math equations (We'll go more in depth later)
+
+```java
+System.out.println(1 + 4 * 7 - 6 / (3 * 6));
+//28.666667
+```
+
+Helpful Tips
+---
+VSCode can autocomplete by typing `sout` and pressing tab
