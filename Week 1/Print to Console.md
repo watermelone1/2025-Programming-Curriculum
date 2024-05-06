@@ -7,19 +7,24 @@ System.out.println("Use \n
                     for multiple lines");
 ```
 
-As you can see, every message is surrounded by quotation marks `""`. This basically tells the computer that it is a message.\
-You can combine messages using `+`.
+As you can see, every message is surrounded by quotation marks `""`. This basically tells the computer that it is a message or "String".\
+You can combine strings using `+`.
 
 ```java
 System.out.println("You can " + "combine messages!");
 //You can combine messages!
 ```
 
-Or you can print math equations (We'll go more in depth later)
+Or you can print math equations (We'll go more in depth later), math equations are not put in quotations or it will not calculuate it. You can combine numbers with strings
 
 ```java
 System.out.println(1 + 4 * 7 - 6 / (3 * 6));
+System.out.println("1 + 4 * 7 - 6 / (3 * 6)");
 //28.666667
+//1 + 4 * 7 - 6 / (3 * 6)
+
+System.out.println(1 + 5 + " <- this should be 6");
+//6 <- this should be 6
 ```
 
 Helpful Tips
