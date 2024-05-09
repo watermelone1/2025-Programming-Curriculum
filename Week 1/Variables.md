@@ -91,7 +91,7 @@ int[] motorIDs = {1,2,3,4,5};
 motorIDs[1]; // get the first member of motorIDs
 // returns 2 what happened?
 ```
-Array indeces start at 0, meaning that `motorIDs[0]` returns the first item in the array, and `motorIDs[1]` returns the second item, lets try again
+Array indices start at 0, meaning that `motorIDs[0]` returns the first item in the array, and `motorIDs[1]` returns the second item, lets try again
 
 ```java
 int[] motorIDs = {1,2,3,4,5};
@@ -106,7 +106,9 @@ wheelSpeeds[3] = 5.4; // changes the fourth item to 5.4
 wheelSpeeds; // {1.1, 2.3, 4.5, 5.4}
 ```
 
-Arrays have a set size which you cannot change for example both of these examples would fail
+Arrays have a set size which you cannot change for example this example would fail
 ```java
 String[] robotNames = {"Maurice", "Nessie", "Donatello"};
 robotNames[3] = "2025 Robot Name";
+//robotNames[3] is out of bounds (xOutOfBoundsException)
+```
