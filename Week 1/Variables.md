@@ -37,7 +37,7 @@ int distanceMoved = 0;
 System.out.println("I moved " + distanceMoved + " meters");
 //I moved 0 meters
 
-int distanceMoved = 5;
+distanceMoved = 5;
 System.out.println("I moved " + distanceMoved + " meters");
 //I moved 5 meters
 ```
