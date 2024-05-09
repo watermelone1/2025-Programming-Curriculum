@@ -3,7 +3,7 @@ An operator is what lets you modify [variables](https://github.com/watermelone1/
 - Modulus `%`
 - Increment/Decrement `++ --`
 - Assignment operators `+= -= *= /= %=`
-- Boolean comparisons (see more)
+- Boolean operators and comparisons (see more)
 - Bitwise operators (we won't use these, if you want to then take AP CSA)
 
 Using operators is as easy as putting it between two numbers or variables. `+ - *` do exactly what they would do in a regular math equation and do not even need a variable. `/` is slightly different, if you divide two integers it will always give out another by throwing away the remainder. To get a double you cast it to a double first.
@@ -64,3 +64,62 @@ As a increases, a%b loops from 0 to (b-1)
 8 % 4;  // 0
 9 % 4;  //  1
 ```
+
+This pattern does not work the same for negative numbers
+
+Boolean Comparisons
+---
+
+Boolean is a type with stores only a true or false value. 
+```java
+boolean isRobotOn = true;
+boolean onRedTeam = false;
+```
+
+Booleans have their own ways of modifying them. These are 
+- AND `&&`
+- OR `||` (vertical bar on the right of the keyboard)
+- NOT `!`
+- XOR `^`
+
+NOT is the easiest boolean operator. It only has one input and returns the opposite of what it was given for example `!true` is false and `!false` is true. We use it the most such as checking whether or not we are in range of something, whether or not we have game pieces, or whether or not we are simulating the robot.
+
+AND means that a value is true only if both sides are true for example `true && false` or `false && true` both give `false`, `true && true` is the only combination that gives `true`. This is representable using a "truth table"
+
+|A&&B|      | A     |       |
+|---|-------|-------|-------|
+|   |       | TRUE  | FALSE |
+| B | TRUE  | TRUE  | FALSE |
+|   | FALSE | FALSE | FALSE |
+
+We use AND to check for multiple requirements:
+```java
+if (withinRange && atCorrectAngle) shoot();
+```
+
+OR gives a true value if at least one of its sides are true so `true || false` or `true || true` both give `true`. The truth table for OR is:
+
+|A\|\|B|      | A     |       |
+|---|-------|-------|-------|
+|   |       | TRUE  | FALSE |
+| B | TRUE  | TRUE  | TRUE  |
+|   | FALSE | TRUE  | FALSE |
+
+We use OR to check for one or more requirements:
+```java
+boolean canClimb = climbersUp || alreadyClimbing;
+```
+
+XOR is the least common boolean operator, it is true when *exactly* one input is true, `true ^ false` is true but `true ^ true` is false. The truth table is: 
+
+|A^B|      | A     |       |
+|---|-------|-------|-------|
+|   |       | TRUE  | FALSE |
+| B | TRUE  | FALSE | TRUE  |
+|   | FALSE | TRUE  | FALSE |
+
+Bitwise Operators
+---
+There is a reason this was left for the end. This is the dark scary side of programming. Rest assured we will NEVER use this on robot code. Ever. Only in AP CSA will you actually use it and you'll probably not touch it after (idk im not in ap csa as of writing this). 
+
+Before learn bitwise operators you must know how to count in binary. I'm not going to teach that but its not too hard and [here](https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/large-number-decimal-to-binary) is a random Khan Academy video I found. A bitwise operation is applying a boolean operation to every 
