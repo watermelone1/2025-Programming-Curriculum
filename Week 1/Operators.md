@@ -122,4 +122,42 @@ Bitwise Operators
 ---
 There is a reason this was left for the end. This is the dark scary side of programming. Rest assured we will NEVER use this on robot code. Ever. Only in AP CSA will you actually use it and you'll probably not touch it after (idk im not in ap csa as of writing this). 
 
-Before learn bitwise operators you must know how to count in binary. I'm not going to teach that but its not too hard and [here](https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/large-number-decimal-to-binary) is a random Khan Academy video I found. A bitwise operation is applying a boolean operation to every 
+Before learn bitwise operators you must know how to count in binary. I'm not going to teach that but its not too hard and [here](https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/large-number-decimal-to-binary) is a random Khan Academy video I found. A bitwise operation is applying a boolean operation to every bit in a number, the bitwise operators are:
+- Bitwise OR `|`
+- Bitwise AND `&`
+- Bitwise XOR `^`
+- Bitwise NOT `~`
+- Bitshift Left `<<`
+- Bitshift Right `>>`
+
+Bitwise OR applies an OR operation on every pair of bits for example
+
+| a    | 1 | 0 | 0 | 1 | 0 |
+|------|---|---|---|---|---|
+| b    | 0 | 1 | 0 | 1 | 1 |
+| a\|b | 1 | 1 | 0 | 1 | 1 |
+(markdown formatting is hard)
+
+Bitwise AND applies an AND operation on every pair of bits for example
+
+| a    | 1 | 0 | 0 | 1 | 0 |
+|------|---|---|---|---|---|
+| b    | 0 | 1 | 0 | 1 | 1 |
+| a&b  | 0 | 0 | 0 | 1 | 0 |
+
+Bitwise XOR applies an XOR operation on every pair of bits for example
+
+| a    | 1 | 0 | 0 | 1 | 0 |
+|------|---|---|---|---|---|
+| b    | 1 | 1 | 0 | 1 | 1 |
+| a^b | 0 | 1 | 0 | 0 | 1 |
+
+BitWise NOT applies a NOT operation on every bit for exaple
+
+| a    | 1 | 0 | 0 | 1 | 0 |
+|------|---|---|---|---|---|
+| !a   | 0 | 1 | 1 | 0 | 1 |
+
+(this one is actually different because java uses 32-bit [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement)) ~x = (-x)-1
+
+Bitshifts move all of the bits to the left or right and throws out the bit on the end. For most purposes this is the same as multiplying or dividing by 2
