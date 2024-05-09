@@ -1,6 +1,6 @@
 Variables allow you to store data about your program. You can use them in place of a number or String or anything else.\
 The most important types to know are:
-- Integers: `int`
+- Integers: `int` (Ranges from ±2.147 billion)
 - Decimal numbers: `double`/`float` (see more, usually use `double`)
 - Strings: `String`
 
@@ -52,7 +52,7 @@ What's the deal with Doubles and Floats
 ---
 Computers are not perfect. They cannot express every number perfectly. The same way that we cannot perfecly represent every fraction as a decimal (eg 1/3 ≈ 0.3333), computers have to cut off a decimal after a certain length. Doubles and floats (floating pint numbers) are good enough for us and we most likely won't run into a problem with them. The important thing to remember here is that **doubles are more accurate than floats**
 
-Floating point numbers have the property that the closer the number is to zero the more accurate the number is and the farther it is the less accurate it is. 
+Floating point numbers have the property that the closer the number is to zero the more accurate the number is and the farther it is the less accurate it is. At extremely high values it is less accurate and can even skip over some numbers.
 
 Example:
 ```java
@@ -63,7 +63,7 @@ More: [Floating Point Math](https://0.30000000000000004.com/)
 
 More Types
 ---
-The thre most importa types are `int`, `double`s and `String`s but there are several more built-in types although we rarely use them. 
+The three most important types are `int`, `double`s and `String`s but there are several more built-in types although we rarely use them. 
 
 There are eight "basic" types called primitives and they are:
 - `int`: represents an integer between -2,147,483,648, and 2,147,483,647 (2^31)
@@ -84,7 +84,7 @@ Technically a `String` is not a primitive type and is a "reference type", there 
 
 About Arrays
 ---
-Arrays are a sequence of another type with a specified length for example `int[] array = new int[5]`  creates an array of 5 `int`s. Each thing in an array is called a member or item and its position is called its index. To access the member at a certain index you put its index in the `[]`
+Arrays are a sequence of another type with a specified length for example `int[] array = new int[5]`  creates an array of 5 `int`s. Each thing in an array is called a member or item and its position is called its index. To access the member at a certain index you put its index in the `[]`. 
 
 ```java
 int[] motorIDs = {1,2,3,4,5};
