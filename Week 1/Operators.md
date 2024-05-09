@@ -42,4 +42,25 @@ currentDistance += movedDistance // currentDistance = currentDistance + movedDis
 ```
 (remember that without assigning the variable it will not change `currentDistance + movedDistance` will not necesarily change `currentDistance`)
 
-Modulus is a strange operator, it's a math operator although it's unlikely you have ever used it in a math class. It basically means to only use the remainder after a division for example `5 % 3` is the remainder of 5/3, 2. It can be used to 
+Modulus
+---
+
+Modulus is a strange operator, it's a math operator although it's unlikely you have ever used it in a math class. It basically means to only use the remainder after a division for example `5 % 3` is the remainder of 5/3, 2. Because of this, you can easily find if a number is a multiple of another. If a%b = 0 then a must be a multiple of b.
+```java
+System.out.println(7%2); // 1, 7 is not a multiple of 2
+System.out.println(45%9); // 0, 45 is a multiple of 9
+```
+
+As a increases, a%b loops from 0 to (b-1)
+```java
+0 % 4;  // 0
+1 % 4;  //  1
+2 % 4;  //   2
+3 % 4;  //    3
+4 % 4;  // 0
+5 % 4;  //  1
+6 % 4;  //   2
+7 % 4;  //    3
+8 % 4;  // 0
+9 % 4;  //  1
+```
