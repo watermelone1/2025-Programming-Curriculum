@@ -152,12 +152,16 @@ Bitwise XOR applies an XOR operation on every pair of bits for example
 | b    | 1 | 1 | 0 | 1 | 1 |
 | a^b | 0 | 1 | 0 | 0 | 1 |
 
-BitWise NOT applies a NOT operation on every bit for exaple
+BitWise NOT applies a NOT operation on every bit for example
 
 | a    | 1 | 0 | 0 | 1 | 0 |
 |------|---|---|---|---|---|
 | !a   | 0 | 1 | 1 | 0 | 1 |
 
-(this one is actually different because java uses 32-bit [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement)) ~x = (-x)-1
+(this one is actually different because java uses 32-bit [Two's complement](https://en.wikipedia.org/wiki/Two%27s_complement)) For most values of x, ~x = (-x)-1
 
 Bitshifts move all of the bits to the left or right and throws out the bit on the end. For most purposes this is the same as multiplying or dividing by 2
+
+| a    | 1 | 0 | 0 | 1 | 0 |
+|------|---|---|---|---|---|
+| a>>1 | 0 | 1 | 0 | 0 | 1 |
