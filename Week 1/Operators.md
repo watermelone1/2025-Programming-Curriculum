@@ -1,4 +1,4 @@
-An operator is what lets you modify [variables](https://github.com/watermelone1/2025-Programming-Curriculum/blob/main/Week%201/Variables.md) and use them with other variables or numbers. The basic operators include:
+An operator is what lets you modify [variables](https://github.com/watermelone1/2025-Programming-Curriculum/blob/main/Week%201/Variables.md) and use them with other variables or numbers. They include:
 - The four basic math operators `+ - * /`
 - Modulus `%`
 - Increment/Decrement `++ --`
