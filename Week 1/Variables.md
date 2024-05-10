@@ -13,12 +13,13 @@ String robotName;
 ```
 Before the variable has a value it has a default value of `null`;
 \
-Specify the values with `=`:
+Specify the values with `=` with the variable name on the left, and the value on the right:
 
 ```
 double gearRatio = 5/3;
-int motorId = 20;
+int motorID = 20;
 String robotName = "Donatello";
+motorID = 30; //changes the value of motorID to 30
 ```
 \
 You can use variables the same way you would use any other values:
