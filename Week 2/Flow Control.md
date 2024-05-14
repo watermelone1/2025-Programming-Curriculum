@@ -103,3 +103,12 @@ for (int i = 0; i < 20; i++) {
 ```
 
 You can end a loop prematurely with `break`.
+
+```java
+while (gamePlaying) {
+  if (points >= 20) {
+    win();
+    break;
+  }
+}
+```
