@@ -104,11 +104,17 @@ for (int i = 0; i < 20; i++) {
 
 You can end a loop prematurely with `break`.
 
+for loops have a second format which lets you loop through each item in an array. The format for this is `for(type variable : array)`
+
 ```java
-while (gamePlaying) {
-  if (points >= 20) {
-    win();
-    break;
-  }
+int[] integers = {1, 2, 3, 4, 5};
+for (int i : integers) {
+  System.out.println(2 * i);
 }
+// 2 4 6 8 10
+
+for (int i = 0; i < integers.length(); i++) {
+  System.out.println(2 * integers[i]);
+}
+//does the same thing
 ```
