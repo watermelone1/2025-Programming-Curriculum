@@ -59,3 +59,43 @@ Now we can move at any speed whenever we want.
 
 Return
 ---
+Methods can do more than condense code. They can take the place of variables. For example if you have a method that calculates the distance to a target the method would *return* the distance. To make a method return something you change `void` to the type that it returns, `void` just means no type:
+
+```java
+public static double distanceToPoint(double x, double y) {
+  double distance = Math.sqrt((x * x) + (y * y)); //distance formula
+  return distance;
+}
+
+public static void main(String[] args) {
+  System.out.println("Distance to (5, 12): " + distaanceToPoint(5.0, 12.0))
+}
+```
+
+###Everything after this point is not taught until Week 3
+
+Getters and Setters
+---
+
+Getters and Setters allow your code to be more readable and allows you to make changes without the risk of breaking something. If you have a public variable then everything can both read and change it. Getters allow you to make a variable private but still access it without allowing you to change it. This way things you won't accidentally change an important part of the robot.
+```java
+class RobotContainer {
+  private static Arm m_arm;
+
+  public static Arm getArm() {
+    return m_arm;
+  }
+}
+```
+
+`m_arm` is private so you cannot use `RobotContainer.m_arm`. If it was you could accidentally change `m_arm` with `RobotContainer.m_arm = new Arm();`. With a getter you can only access it with `RobotContainer.getArm()`. Setters are similar but used less often. They let you set a value without needing to know its value.
+
+```java
+private double targetRotation = 2 * Math.PI;
+
+public void setTargetRotation(double degrees) {
+  targetRotation = Math.toRadians(degrees);
+}
+```
+
+They are also often used together to make it more readable.
