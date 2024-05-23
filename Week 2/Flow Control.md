@@ -55,11 +55,18 @@ if () {
 }
 ```
 
+If statements do not need curly brackets if they only run one line
+
+```java
+int points = 10;
+if (scoredPoints()) points++;
+```
+
+
 Switch
 ---
-(This segment is rarely used. Because of this I won't go super in detail)
 
-Because long `if` chains are bad practice there is an alternative. If you want to do something different for different values of a variable you would use a `switch` statement. A switch statement reads a value and runs one section depending on what it is. It does not take a boolean value and you can't compare it, only check its value. It has an unusual syntax, you start with `switch` and then the variable to check and in curly brackets you write `case (checked value): ` where you then write the code it would run. At the end of each section you write `break`
+Because long `if` chains are bad practice there is an alternative. If you want to do something different for different values of a variable you would use a `switch` statement. A switch statement reads a value and runs one section depending on what it is. It does not take a boolean value and you can't compare it, only check its value. It has an unusual syntax, you start with `switch` and then the variable to check and in curly brackets you write `case (checked value): ` where you then write the code it would run. At the end of each section you write `break`. The `default` case will run if no other case matches.
 
 ```java
 switch(number) {
