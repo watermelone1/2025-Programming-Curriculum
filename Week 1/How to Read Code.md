@@ -14,7 +14,7 @@ scorePoints(1);
 //This is a comment which doesn't do anything
 ```
 
-As you can see, every line ends with a semicolon `;`.  Think of it like how a period ends a sentence, a semicolon ends a line of code.\
+As you can see, every line ends with a semicolon `;`.  Think of it like how a period ends a sentence, a semicolon ends a line of code.
 
 ### All concepts after this point haven't been taught yet
 
