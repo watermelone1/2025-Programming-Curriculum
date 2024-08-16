@@ -59,7 +59,7 @@ public class Color{
 }
 ```
 
-With this we can use `Color.add` to add to colors, `Color.mix` to mix two colors and `Color.invert` to invert a color. We can also use `Color.WHITE` to get the color white as well as the other colors. There is also a method that doesn't have a name, it is called a *contructor*. The constructor is a method that runs when an object is created. You can also give it parameters which are passed in when you create it, `new Color(1.0, 1.0, 0.0)` would create yellow. We can do anything in the constructor just like another method.
+With this we can use `Color.add` to add to colors, `Color.mix` to mix two colors and `Color.invert` to invert a color. We can also use `Color.WHITE` to get the color white as well as the other colors. Due to a weird quirk of Java, enums are always static. There is also a method that doesn't have a name, it is called a *contructor*. The constructor is a method that runs when an object is created. You can also give it parameters which are passed in when you create it, `new Color(1.0, 1.0, 0.0)` would create yellow. We can do anything in the constructor just like another method.
 
 ```java
 public class LEDs {
