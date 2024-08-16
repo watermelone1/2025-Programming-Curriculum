@@ -113,3 +113,46 @@ String[] robotNames = {"Maurice", "Nessie", "Donatello"};
 robotNames[3] = "2025 Robot Name";
 //robotNames[3] is out of bounds (xOutOfBoundsException)
 ```
+
+# Enum
+Enums, short for enumerator, are a special type of variable that can only be one of a few options.
+
+```java
+enum DayOfTheWeek {
+  MONDAY,
+  TUESDAY,
+  WEDNESDAY,
+  THURSDAY,
+  FRIDAY,
+  SATURDAY,
+  SUNDAY
+}
+
+DayOfTheWeek today = DayOfTheWeek.THURSDAY;
+```
+
+Enums in java have other special properties similar to a class. They can have variables and constructors.
+
+```java
+enum Color {
+  RED(1., 0., 0.),
+  YELLOW(1., 1., 0.),
+  GREEN(0., 1., 0.),
+  CYAN(0., 1., 1.),
+  BLUE(0., 0., 1.),
+  PURPLE(1., 0., 1.),
+  BLACK(0., 0., 0.),
+  GRAY(.5, .5, .5),
+  WHITE(1., 1., 1.)
+
+  final double red;
+  final double green;
+  final double blue;
+
+  Color(double r, double g, double b) {
+    this.red = r;
+    this.green = g;
+    this.blue = b;
+  }
+}
+```
