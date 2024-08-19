@@ -132,6 +132,7 @@ Before learn bitwise operators you must know how to count in binary. I'm not goi
 
 Bitwise OR applies an OR operation on every pair of bits for example
 
+<sup>excuse the horrible formatting</sup>
 | a    | 1 | 0 | 0 | 1 | 0 |
 |------|---|---|---|---|---|
 | b    | 0 | 1 | 0 | 1 | 1 |
