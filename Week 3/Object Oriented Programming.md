@@ -121,3 +121,24 @@ public class Color {
   public getB() {} 
 }
 ```
+
+# Passing by value or by reference
+
+When you pass a variable into a method parameter some variables are passed by *value* and some are passed by *reference*. Changing the parameter when you pass by value will not affect the original variable while passing by reference will. All primitive types (int, double, boolean) are passed by value, while objects are passed by reference. For example:
+
+```java
+void increment(int x) {
+  x++;
+}
+
+int a = 5;
+increment(a); // a = 5, a is not changed despite running x++, it is passed by value.
+
+
+void invertColor(Color c) {
+  c.invert();
+}
+
+Color red = new Color(1.0, 0.0, 0.0);
+invertColor(red); // red is inverted, it is passed by reference
+```
