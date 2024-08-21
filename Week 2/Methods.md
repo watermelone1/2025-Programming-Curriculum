@@ -99,3 +99,22 @@ public void setTargetRotation(double degrees) {
 ```
 
 They are also often used together to make it more readable.
+
+# Method Overloading
+
+Overloading is when a method can do two different things depending on the types provided. This is done with a method being defined twice with two different types of parameters. For example if you want a method that can take in a String, *or* a number this can be done using an overload.
+
+```java
+public double getNumber(String s) {
+  return Double.parseDouble(s);
+}
+
+public double getNumber(char c) {
+  return (double) c - '0'; //trust me this works;
+}
+
+void main() {
+  System.out.println(getNumber("3.6")); // getNumber takes a String
+  System.out.println(getNumber('4')); // getNumber takes a char
+}
+```
