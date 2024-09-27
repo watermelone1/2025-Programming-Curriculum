@@ -48,5 +48,6 @@ Helpful Tips
 ---
 VSCode will highlight a lot of things such as:
 - Code highlighting
+- Autocomplete that usually works
 - Variable and method usages
 - Bracket start and ends
