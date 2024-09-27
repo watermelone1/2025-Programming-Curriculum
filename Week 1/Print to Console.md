@@ -8,7 +8,7 @@ System.out.println("Use \n
 ```
 
 As you can see, every message is surrounded by quotation marks `""`. This basically tells the computer that it is a message or "String".\
-You can combine strings using `+`.
+You can combine strings using `+` called "concatenation".
 
 ```java
 System.out.println("You can " + "combine messages!");
