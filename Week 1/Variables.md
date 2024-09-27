@@ -80,7 +80,7 @@ Technically a `String` is not a primitive type and is a "reference type", there 
 - Strings: A list of `char`s, denoted with `""`
 - Arrays: A list of another type, denoted with `[]` when initializing a variable or `{}` when setting a variable (see more)
 - Enums: Similar to an Array, all members are public, static, and final
-- Class: See OOP document, allows you to create your own types
+- Classes/Objects: See OOP document, allows you to create your own types, Strings are actually objects
 - Interface: maybe i'll make a document for it, DM @fatcactis otherwise. Stores variables and methods required for a class
 
 About Arrays
