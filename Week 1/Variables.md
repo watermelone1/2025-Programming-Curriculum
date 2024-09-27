@@ -111,7 +111,7 @@ Arrays have a set size which you cannot change for example this example would fa
 ```java
 String[] robotNames = {"Maurice", "Nessie", "Donatello"};
 robotNames[3] = "2025 Robot Name";
-//robotNames[3] is out of bounds (xOutOfBoundsException)
+//robotNames[3] is out of bounds (indexOutOfBoundsException)
 ```
 
 # Enum
