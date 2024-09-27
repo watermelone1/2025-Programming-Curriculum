@@ -42,6 +42,11 @@ currentDistance += movedDistance // currentDistance = currentDistance + movedDis
 ```
 (remember that without assigning the variable it will not change `currentDistance + movedDistance` will not necesarily change `currentDistance`)
 
+Keep in mind that addition is performed left to right so `"Hello World" + 3 + 4` returns `"Hello World34` and not `"Hello World7` because the 3 is added to the end of the string before the 4 is.
+```java
+System.out.println("Hello World"  + 3 + 4); //Hello World34
+System.out.println("Hello World"  + (3 + 4)); //Hello World7
+```
 Modulus
 ---
 
