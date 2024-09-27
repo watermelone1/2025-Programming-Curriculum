@@ -77,11 +77,11 @@ There are eight "basic" types called primitives and they are:
 - `bool`: a true or false value
 
 Technically a `String` is not a primitive type and is a "reference type", there are five reference types which are:
-- `Strings`: A list of `char`s, denoted with `""`
-- `Arrays`: A list of another type, denoted with `[]` when initializing a variable or `{}` when setting a variable (see more)
-- `Enums`: Similar to an Array, all members are public, static, and final
-- `Class`: See OOP document, allows you to create your own types
-- `Interface`: maybe i'll make a document for it, DM @fatcactis otherwise. Stores variables and methods required for a class
+- Strings: A list of `char`s, denoted with `""`
+- Arrays: A list of another type, denoted with `[]` when initializing a variable or `{}` when setting a variable (see more)
+- Enums: Similar to an Array, all members are public, static, and final
+- Class: See OOP document, allows you to create your own types
+- Interface: maybe i'll make a document for it, DM @fatcactis otherwise. Stores variables and methods required for a class
 
 About Arrays
 ---
